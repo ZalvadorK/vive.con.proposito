@@ -368,8 +368,8 @@ function mostrarResultados() {
         alert("Tus resultados se han guardado correctamente.");
     })
     .catch(error => {
-        console.error("Tus resultados se han guardado correctamente.", error);
-        alert("Tus resultados se han guardado correctamente.");
+        console.error("Error al guardar resultados:", error);
+        alert("Error al guardar tus resultados. Intenta de nuevo.");
     });
 }
 
