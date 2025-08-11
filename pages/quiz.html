@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Valores Personales</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/quiz.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <header class="nav__container">
+            <div class="nav__logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <a href="#inicio">Valores Universitarios</a>
+            </div>
+            
+            <!-- Menu desktop -->
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#que-son" class="nav__link">¿Qué son?</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#fundamentales" class="nav__link">Valores</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#quiz" class="nav__link">Quiz</a>
+                </li>
+            </ul>
+            
+            <!-- Boton hamburguesa -->
+            <div class="nav__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+    </nav>
+
+    <!-- Overlay para cerrar menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menu lateral-->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar__header">
+            <h3>Menú</h3>
+            <button class="close__btn" id="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar__menu">
+            <li class="sidebar__item">
+                <a href="../index.html" class="sidebar__link">
+                    <span class="icon">
+                        <i class="fa-solid fa-house-user"></i>
+                    </span>
+                    <span class="text">Inicio</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="../index.html#que-son" class="sidebar__link">
+                    <span class="icon">
+                        <i class="fa-solid fa-question"></i>
+                    </span>
+                    <span class="text">¿Qué son?</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="../index.html#fundamentales" class="sidebar__link">
+                    <span class="icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </span>
+                    <span class="text">Valores</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="../index.html#quiz" class="sidebar__link">
+                    <span class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </span>
+                    <span class="text">Quiz</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container__quiz">
+        <header>
+            <h1>Quiz de Valores Personales</h1>
+            <p>Descubre tus valores más fuertes y aquellos que necesitas reforzar</p>
+        </header>
+
+        <div id="quiz-container">
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            
+            <div id="question-container">
+                <div id="question-counter"></div>
+                <h2 id="question-text"></h2>
+                <div id="options-container"></div>
+                <button id="next-btn" disabled>Siguiente</button>
+            </div>
+        </div>
+
+        <div id="results-container" style="display: none;">
+            <h2>Resultados de tu Quiz de Valores</h2>
+            
+            <div class="results-section">
+                <h3>🌟 Tus Valores Más Fuertes</h3>
+                <div id="strongest-values"></div>
+            </div>
+
+            <div class="results-section">
+                <h3>💪 Valores a Reforzar</h3>
+                <div id="weakest-values"></div>
+                <p class="improvement-note">
+                    Estos valores representan áreas de crecimiento personal. 
+                    Considera cómo puedes integrarlos más en tu vida diaria.
+                </p>
+            </div>
+
+            <button id="restart-btn">Realizar Quiz Nuevamente</button>
+        </div>
+    </div>
+
+    <script src="../assets/js/quiz.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

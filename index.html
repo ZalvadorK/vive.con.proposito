@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores Universitarios </title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <header class="nav__container">
+            <div class="nav__logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <a href="#inicio" class="nav__title">Valores Universitarios</a>
+            </div>
+            
+            <!-- Menu desktop -->
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="#inicio" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#que-son" class="nav__link">¿Qué son?</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#fundamentales" class="nav__link">Valores</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#quiz" class="nav__link">Quiz</a>
+                </li>
+            </ul>
+            
+            <!-- Boton hamburguesa -->
+            <div class="nav__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+    </nav>
+
+    <!-- Overlay para cerrar menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menu lateral-->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar__header">
+            <h3>Menú</h3>
+            <button class="close__btn" id="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar__menu">
+            <li class="sidebar__item">
+                <a href="#inicio" class="sidebar__link">
+                    <span class="icon">
+                        <i class="fa-solid fa-house-user"></i>
+                    </span>
+                    <span class="text">Inicio</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#que-son" class="sidebar__link">
+                    <span class="icon">
+                        <i class="fa-solid fa-question"></i>
+                    </span>
+                    <span class="text">¿Qué son?</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#fundamentales" class="sidebar__link">
+                    <span class="icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </span>
+                    <span class="text">Valores</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#quiz" class="sidebar__link">
+                    <span class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </span>
+                    <span class="text">Quiz</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contenido -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1>Descubre tus <span class="highlight">Valores</span> y vive con propósito </h1>
+                    <p>Los valores son los principios fundamentales que guían nuestras decisiones y dan sentido a nuestra existencia. Explora el fascinante mundo de los valores humanos. </p>
+                    <a href="" class="intro__btn">Valores.pdf</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="floating-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problema Section -->
+        <section id="que-son" class="intro__section">
+            <div class="container">
+                <h2>¿Qué son los Valores?</h2>
+                <p>Los valores son creencias profundas que determinan cómo percibimos el mundo y cómo actuamos en él.</p>
+                <div class="intro__grid">
+                    <div class="intro__card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <h3>Guias de Comportamiento</h3>
+                        <p>Los valores actúan como un compás moral que nos ayuda a tomar decisiones correctas en situaciones complejas.</p>
+                    </div>
+                    <div class="intro__card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <h3>Principios Fundamentales</h3>
+                        <p>Los estudiantes muestran menor empatía y responsabilidad social, priorizando el éxito individual sobre el bienestar colectivo.</p>
+                    </div>
+                    <div class="intro__card">
+                        <div class="card-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Pérdida de Ética</h3>
+                        <p>La formación ética se ha relegado a un segundo plano, creando profesionales sin brújula moral.</p>
+                    </div>
+                </div>
+                <footer class="intro__section-footer">
+                    <div class="intro__footer-phrase">
+                        <p>"Actúa de tal manera que trates a la humanidad, tanto en tu persona como en la de cualquier otro, siempre como un fin y nunca solamente como un medio." <span class="highlight">— Immanuel Kant</span></p>
+                    </div>
+                    <figure class="intro__footer__contaner-img">
+                        <img src="img/Immanuel_Kant.jpg" alt="" class="intro__footer__img">
+                    </figure>
+                </footer>
+            </div>
+        </section>
+
+        <!-- Valores Section -->
+        <section id="fundamentales" class="valores__section">
+            <div class="container">
+                <h2>Valores Fundamentales</h2>
+                <div class="valores__grid">
+                    <div class="valor__card">
+                        <div class="valor-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Integridad</h3>
+                        <p>Actuar con honestidad y coherencia en todas las actividades académicas y personales.</p>
+                    </div>
+                    <div class="valor__card">
+                        <div class="valor-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Respeto</h3>
+                        <p>Valorar las diferencias y tratar a todos con dignidad y consideración.</p>
+                    </div>
+                    <div class="valor__card">
+                        <div class="valor-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Responsabilidad</h3>
+                        <p>Asumir las consecuencias de nuestras acciones y comprometerse con el bienestar común.</p>
+                    </div>
+                    <div class="valor__card">
+                        <div class="valor-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Excelencia</h3>
+                        <p>Buscar la mejora continua y el desarrollo personal y académico constante.</p>
+                    </div>
+                    <div class="valor__card">
+                        <div class="valor-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sostenibilidad</h3>
+                        <p>Promover prácticas que cuiden el medio ambiente y las futuras generaciones.</p>
+                    </div>
+                    <div class="valor__card">
+                        <div class="valor-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Diversidad</h3>
+                        <p>Celebrar y aprender de las diferentes culturas, perspectivas y experiencias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="quiz__section">
+            <div class="container">
+                <h2>Descubre Tus Valores</h2>
+                <p class="quiz-intro">Tus valores son los cimientos sobre los que construyes tu vida. Conocerlos te permite tomar decisiones más conscientes, establecer metas alineadas con tu esencia y desarrollar relaciones más auténticas.</p>
+                
+                <div class="quiz-container">
+                    <header>
+                        <figure>
+                            <img src="img/quiz.png" alt="">
+                        </figure>
+                        <a href="pages/quiz.html">
+                            Realizar Quiz
+                        </a>
+                    </header>
+                    <footer>
+
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
