@@ -357,7 +357,7 @@ function mostrarResultados() {
     };
 
     // Enviar datos al servidor
-    fetch('http://fdb1034.awardspace.net/registro.php', {
+    fetch('registro.php', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(datosParaEnviar)
