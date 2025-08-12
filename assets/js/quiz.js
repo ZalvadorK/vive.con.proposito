@@ -357,7 +357,7 @@ function mostrarResultados() {
     };
 
     // Enviar datos al servidor
-    fetch('http://web-production-c5ab5.up.railway.app/registro.php', {
+    fetch('http://web-production-c5ab5.up.railway.app/php/registro.php', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(datosParaEnviar)
