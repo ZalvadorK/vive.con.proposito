@@ -369,7 +369,7 @@ function mostrarResultados() {
     })
     .catch(error => {
         console.error("Error al guardar resultados:", error);
-        alert("Error al guardar tus resultados. Intenta de nuevo.");
+        alert("Error al guardar tus resultados. Intenta de nuevo.\n Error de fetch");
     });
 }
 
