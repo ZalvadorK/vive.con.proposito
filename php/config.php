@@ -7,7 +7,7 @@ $dbname = getenv("DB_DATABASE"); //Nombre de la base de datos
 $puerto = getenv("DB_PORT"); //Puerto MySQL
 
 // Crear conexión
-$conn = new mysqli($servername, $username, $password, $$dbname, $puerto);
+$conn = new mysqli($servername, $username, $password, $dbname, $puerto);
 
 // Verificar conexión
 if ($conn->connect_error) {
